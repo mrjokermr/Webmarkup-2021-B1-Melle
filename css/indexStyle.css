@@ -7,27 +7,29 @@
 
 */
 
-body, header {
+body, .headerWebpage {
     padding: 0;
     margin: 0;
-    background-color: #e8eddf;
+    background-color: white;
+    font-family: 'Notable', Arial, Helvetica, sans-serif;
 }
 
 #websiteLogo {
     width: 100%;
     height: 3%;
-    background-color: #e8eddf;
+    background-color: white;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .mainPageTitle, .mainPageSubTitle {
     width: 100%;
-    height: 5%;
-    color: #f5cb5c;
-    background-color: #e8eddf;
+    height: 4.6%;
+    color: black;
+    background-color: white;
     margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 #navigationContainer {
@@ -45,18 +47,52 @@ body, header {
     height: 100%;
 }
 
-.menuItem {
+.menuItem1 {
     float: left;
     width: 33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(95deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
+}
+
+.menuItem2 {
+    float: left;
+    width: 33%;
+    background-color: #54828b;
+}
+
+.menuItem3 {
+    float: left;
+    width: 33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
+    transition: background 1s ease-in;
+}
+
+.menuItem3:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
+    color: white;
+}
+
+.menuItem1:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
+    color: white;
+}
+
+.menuItem2:hover {
+    background-color: #2d464b;
+    color: white;
 }
 
 .linkMenuItem {
     display: block;
     height: 100%;
     text-align: center;
-    background-color: lightgray;
     text-decoration: none;
-    color: black;
+    color: inherit;
+    font-size: 1.8vh;
+    padding-top: 0.4em;
 }
 
 #solarEnergyVideo {
@@ -64,5 +100,76 @@ body, header {
     width: 50%;
     margin-left: 25%;
     margin-top: 1%;
-    background-color: purple;
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+}
+
+.copyrightsVideo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2vh;
+}
+
+.articlesTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 3.1vh;
+}
+
+#articlesContainer {
+    width: 50%;
+    height: auto;
+    float: left;
+    background-color: white;
+    border: solid black 1px;
+    margin-left: 1px;
+}
+
+.headerArticle {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    background-color: rgba(197, 255, 184,1);
+    border-bottom: solid black 0.1em;
+}
+
+.productName {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.productLinkReference {
+    width: 100%;
+    font-size: 1.2vh;
+    color: black;
+    text-decoration: none;
+}
+
+.productText {
+    width: 60%;
+    font-family: Arial;
+    word-wrap: break-word;
+}
+
+.productImage {
+    float: right;
+    width: 39.8%;
+    height: inherit;
+    border-left: solid black 0.1em;
+}
+
+#reasonsToGoSolarContainer {
+    position: fixed;
+    float: right;
+    margin-left: 68%;
+    width: 800px;
+    height: 600px;
+    top: 80%;
+    background-color: pink;
 }

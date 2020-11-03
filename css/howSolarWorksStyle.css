@@ -1,0 +1,143 @@
+body, .headerWebpage {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Notable', Arial, Helvetica, sans-serif;
+}
+
+#websiteLogo {
+    width: 100%;
+    height: 3%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mainPageTitle, .mainPageSubTitle {
+    width: 100%;
+    height: 4.6%;
+    color: black;
+    background-color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#navigationContainer {
+    width: 100%;
+    height: 4%;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItemsWrapper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 101%;
+    height: 100%;
+}
+
+.menuItem1 {
+    float: left;
+    width: 33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(95deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
+}
+
+.menuItem2 {
+    float: left;
+    width: 33%;
+    background-color: #54828b;
+}
+
+.menuItem3 {
+    float: left;
+    width: 33%;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
+    transition: background 1s ease-in;
+}
+
+.menuItem3:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
+    color: white;
+}
+
+.menuItem1:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
+    color: white;
+}
+
+.menuItem2:hover {
+    background-color: #2d464b;
+    color: white;
+}
+
+.linkMenuItem {
+    display: block;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8vh;
+    padding-top: 0.4em;
+}
+
+#articlesSection {
+    margin-top: 1.3%;
+    width: 95%;
+    height: 80%;
+    margin-left: 2.5%;
+    background-color: grey;
+    padding: 0;
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+}
+
+.article2 {
+    width: 33.33%;
+    height: 30%;
+    background-color: darkblue;
+    float: left;
+}
+
+.article1 {
+    float: left;
+    width: 33.33%;
+    height: 82%;
+    background-color: darkkhaki;
+}
+
+.article3 {
+    float: left;
+    width: 33.33%;
+    height: 41%;
+    background-color: darkcyan;
+}
+
+.article5 {
+    clear: left;
+    float: left;
+    width: 33.33%;
+    height: 70%;
+    margin-top: -21.7%;
+    background-color: pink;
+}
+
+.article4 {
+    float: right;
+    width: 33.33%;
+    height: 41%;
+    background-color: darkorchid;
+}
+
+.article6 {
+    float: left;
+    width: 66.66%;
+    height: 18%;
+    background-color: darkslategray;
+}

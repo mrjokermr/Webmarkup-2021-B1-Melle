@@ -129,7 +129,7 @@ body, .headerWebpage {
 }
 
 .headerArticle {
-    width: 60%;
+    width: 59.5%;
     height: auto;
     overflow: hidden;
     word-wrap: break-word;
@@ -168,8 +168,79 @@ body, .headerWebpage {
     position: fixed;
     float: right;
     margin-left: 68%;
-    width: 800px;
+    width: 400px;
     height: 600px;
-    top: 80%;
-    background-color: pink;
+    bottom: 40;
+    right: 12;
+    background-color: rgb(84,130,139);
+    border: solid 2px black;
+    border-radius: 15px;
+}
+
+.fiveReasonsTitle {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 24px;
+}
+
+.fiveReasonsLiWrapper {
+    list-style-type: circle;
+}
+
+.fiveReasonsItem {
+    padding-bottom: 18px;
+}
+
+footer {
+    width: 78%;
+    position: fixed;
+    bottom: -15;
+    padding-left: 1%;
+}
+
+#cookieStatement {
+    width: 23%;
+    position: fixed;
+    bottom: -15;
+    right: 0;
+    color: #FFF;
+    background-color: rgba(255, 170, 0, 0.5); /*FA0 = rgb(255, 170, 0)*/
+    text-align: center;
+}
+
+
+/*tablet*/
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1179px) {
+    #reasonsToGoSolarContainer {
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        margin-top: 1.5%;
+        float: none;
+        bottom: 0;
+        right: auto;
+    }
+
+    #articlesContainer {
+        width: 70%;
+        height: auto;
+        float: left;
+        background-color: white;
+        border: solid black 1px;
+        margin-left: 15%;
+    }
+
+    .headerArticle {
+        width: 59%;
+        height: auto;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-align: center;
+        background-color: rgba(197, 255, 184,1);
+        border-bottom: solid black 0.1em;
+    }
+
 }

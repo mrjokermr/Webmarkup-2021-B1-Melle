@@ -7,29 +7,49 @@
 
 */
 
-body, .headerWebpage {
+html {
+    overflow-x: hidden;
+}
+
+body {
     padding: 0;
     margin: 0;
-    background-color: white;
-    font-family: 'Notable', Arial, Helvetica, sans-serif;
+    /*background-color: white;*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerWebpage {
+    background-color: rgba(100,100,100,0);
 }
 
 #websiteLogo {
     width: 100%;
-    height: 3%;
-    background-color: white;
+    height: 5%;
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: Lato;
+    font-size: 4vh;
+    animation: 1.6s textTitle;
+    text-shadow: 1.2px 1.2px rgba(54, 54, 54,0.6);
 }
 
 .mainPageTitle, .mainPageSubTitle {
     width: 100%;
     height: 4.6%;
     color: black;
-    background-color: white;
     margin: 0;
     text-align: center;
+    font-family: Lato;
+    text-shadow: 1.2px 1.2px rgba(54, 54, 54,0.6);
+}
+
+.pinkText {
+    color: #e3027f;
 }
 
 #navigationContainer {
@@ -47,42 +67,16 @@ body, .headerWebpage {
     height: 100%;
 }
 
-.menuItem1 {
+.menuItem {
     float: left;
     width: 33%;
-    background: rgb(255,255,255);
-    background: linear-gradient(95deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
+    background-color: rgba(168, 198, 159,0.6);
 }
 
-.menuItem2 {
-    float: left;
-    width: 33%;
-    background-color: #54828b;
-}
-
-.menuItem3 {
-    float: left;
-    width: 33%;
-    background: rgb(255,255,255);
-    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(99,159,171,1) 45%, rgba(84,130,139,1) 100%);
-    transition: background 1s ease-in;
-}
-
-.menuItem3:hover {
-    background: rgb(255,255,255);
-    background: linear-gradient(270deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
-    color: white;
-}
-
-.menuItem1:hover {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 7%, rgba(66,100,113,1) 45%, rgba(45,70,75,1) 100%);
-    color: white;
-}
-
-.menuItem2:hover {
-    background-color: #2d464b;
-    color: white;
+.menuItem:hover {
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    color: rgb(101, 79, 111);
 }
 
 .linkMenuItem {
@@ -111,12 +105,14 @@ body, .headerWebpage {
     height: auto;
     text-align: center;
     font-size: 1.2vh;
+    font-family: Arial;
 }
 
 .articlesTitle {
     width: 100%;
     text-align: center;
     font-size: 3.1vh;
+    font-family: 'Notable';
 }
 
 #articlesContainer {
@@ -142,26 +138,32 @@ body, .headerWebpage {
     width: 100%;
     margin-top: 0;
     margin-bottom: 0.5em;
+    font-family: 'Notable';
 }
 
 .productLinkReference {
     width: 100%;
-    font-size: 1.2vh;
+    font-size: 1.8vh;
+    font-weight: bold;
     color: black;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .productText {
     width: 60%;
     font-family: Arial;
     word-wrap: break-word;
+    border-right: solid black 0.1em;
 }
 
 .productImage {
     float: right;
     width: 39.8%;
     height: inherit;
+    max-height: 18em;
     border-left: solid black 0.1em;
+    border-bottom: solid black 0.1em;
 }
 
 #reasonsToGoSolarContainer {
@@ -172,7 +174,7 @@ body, .headerWebpage {
     height: 600px;
     bottom: 40;
     right: 12;
-    background-color: rgb(84,130,139);
+    background-color: rgb(168, 198, 159);
     border: solid 2px black;
     border-radius: 15px;
 }
@@ -243,4 +245,30 @@ footer {
         border-bottom: solid black 0.1em;
     }
 
+    .footer {
+        width: 50%;
+    }
+
+    #cookieStatement {
+        width: 50%;
+    }
+}
+
+@keyframes textTitle {
+    0% {
+        font-family: Lato;
+        letter-spacing: 0.02em;
+        transform: translateY(-1.4em);
+    }
+
+    50% {
+        font-family: Lato;
+        letter-spacing: 0.07em;
+        transform: translateY(-0.1em);
+    }
+
+    100% {
+        font-family: Lato;
+        letter-spacing: normal;
+    }
 }

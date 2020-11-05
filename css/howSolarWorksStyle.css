@@ -61,7 +61,7 @@ body {
 .menuItem {
     float: left;
     width: 33%;
-    background-color: rgba(168, 198, 159,0.6);
+    background-color: rgba(168, 198, 159,0.5);
 }
 
     .menuItem:hover {
@@ -222,19 +222,31 @@ footer {
         height: 50%;
     }
 
-    .article3 {
+    .article3 /* lichtgroen/blauw*/ {
         float: left;
         width: 50%;
         height: 40%;
     }
 
-    .article5 {
+    .article5 /* roze */ {
         float: right;
         width: 50%;
         height: 30%;
         margin-top: 0%;
     }
 
+    .article6 /*donker groen*/ {
+        float: left;
+        width: 100%;
+    }
+
+    .footer {
+        width: 50%;
+    }
+
+    #cookieStatement {
+        width: 50%;
+    }
 }
 
 

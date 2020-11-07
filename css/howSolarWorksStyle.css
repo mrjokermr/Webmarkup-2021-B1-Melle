@@ -80,6 +80,10 @@ body {
     padding-top: 0.4em;
 }
 
+.linkMenuItem:active {
+    color: darkred;
+}
+
 #articlesSection {
     margin-top: 1.3%;
     width: 95%;
@@ -181,7 +185,10 @@ body {
     width: 33.2%;
     height: 100%;
     background-color: blue;
-    border: solid 1px darkgrey;
+    /*border: solid 1px darkgrey;*/
+    border-style: double;
+    border-color: darkgrey;
+    border-width: 1px;
     padding: 0px;
     margin: 0px;
     display: inline-block;

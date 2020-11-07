@@ -1,13 +1,56 @@
-<html>
+﻿<html>
 <head>
     <meta charset="utf-8">
 
     <title>Homepage</title>
 
-    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/contactStyle.css">
 </head>
 <body>
-    <header></header>
+    <header class="headerWebpage">
+        <p id="websiteLogo">Lets go green!</p>
+        <h1 class="mainPageTitle"><span class="pinkText">InhHolland</span> Solar Energy</h1>
+        <h2 class="mainPageSubTitle">Make the world a better place</h2>
+    </header>
+    <nav id="navigationContainer">
+        <ul class="menuItemsWrapper">
+            <li class="menuItem"><a class="linkMenuItem" href="howsolarworks.html">How solar power works</a></li>
+            <li class="menuItem"><a class="linkMenuItem" href="eusolar.html">EU solar</a></li>
+            <li class="menuItem"><a class="linkMenuItem" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <article id="contactcontent">
+        <!-- het contact formulier die werkend verwijst naar het testform.php -->
+        <h2 class="contactTitle">Contact</h2>
+        <form action="http:// i-want-solar-energy.com/testform.php" target="_blank" method="post">
+            <fieldset>
+                <legend>Contact formulier</legend>
+                <label>Naam</label>
+                <input name="name">
+                <label>Email adres</label>
+                <input name="email">
+                <label>Bericht</label>
+                <textarea name="message"></textarea>
+                <button type="submit" class="activateContact">Verzenden</button>
+            </fieldset>
+        </form>
+    </article>
+
+    <section id="productsSection">
+        <p class="imageProductTitle1">175Wp 12V zonnepaneel Victron Poly</p>
+        <a target="_blank" href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SPP041751200"><img class="productImg1" alt="Picture of a product" src="../images/zonnepanelenProduct.jpg" /></a>
+        <p class="imageProductTitle">Victron Multiplus 24V/2000W/50-30</p>
+        <a target="_blank" href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/CMP242020000"><img class="productImg" alt="Picture of a product" src="../images/MultiPlus_Compact_24V_2000_80-30_Harrems_Zonnepanelen.jpg" /></a>
+        <p class="imageProductTitle">SMA Sunny Boy SB2.5 omvormer</p>
+        <a target="_blank" href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/%22SMA%20Sunny%20Boy%20SB2.5%22"><img class="productImg" alt="Picture of a product" src="../images/SMA_Sunny_Boy__1.5_-_2.5.jpg" /></a>
+    </section>
+
+    <footer>
+        <p>Melle Roffel &copy;</p>
+    </footer>
+    <p id="cookieStatement">Cookie statement</p>
 
     <script></script> <!-- debug voor hover transitions in google chrome -->
 </body>

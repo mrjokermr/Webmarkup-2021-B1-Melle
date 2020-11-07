@@ -36,6 +36,8 @@ body {
     font-size: 4vh;
     animation: 1.6s textTitle;
     text-shadow: 1.2px 1.2px rgba(54, 54, 54,0.6);
+    opacity: 1;
+    position: relative;
 }
 
 .mainPageTitle, .mainPageSubTitle {

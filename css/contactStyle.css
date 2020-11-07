@@ -17,13 +17,6 @@ body {
     background-color: rgba(100,100,100,0);
 }
 
-figcaption {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-size: 1.8vh;
-}
-
 #websiteLogo {
     width: 100%;
     height: 5%;
@@ -69,7 +62,6 @@ figcaption {
     float: left;
     width: 33%;
     background-color: rgba(168, 198, 159,0.6);
-    font-family: 'Roboto', sans-serif;
 }
 
     .menuItem:hover {
@@ -88,39 +80,40 @@ figcaption {
     padding-top: 0.4em;
 }
 
-#tableWrapper {
-    float: left;
-    width: auto;
+#contactcontent {
+    width: 40%;
     height: auto;
-    margin-top: 2em;
-    margin-left: 8em;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: #F5F5F5; /* kleur 5/7 */
+    -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+    box-shadow: 0 0 10px black; /* box shadow alle kanten. */
     animation: 0.7s fadeInContainer;
 }
 
-table.tableizer-table {
-    font-size: 1.6vh;
-    border: 1px solid #CCC;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+.contactTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    font-family: RobotoRegular, Arial, Lato;
 }
 
-.tableizer-table td {
-    padding: 4px;
-    margin: 3px;
-    border: 1px solid #CCC;
+input, textarea, label, .activateContact {
+    display: inline-block;
+    width: 33.33%;
+    margin-left: 33.33%;
 }
 
-.tableizer-table th {
-    background-color: rgb(168, 198, 159);
-    color: #FFF;
+label {
+    text-align: center;
+    padding-top: 1%;
     font-weight: bold;
 }
 
-.copyrightData {
-    font-family: Arial;
-    font-size: 1.4vh;
+.activateContact {
+    margin-top: 3%;
+    display: block;
 }
 
 #productsSection {
@@ -168,42 +161,36 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 1280px) {
+.footerStudentInfo {
+    width: 100%;
+    text-align: center;
+}
 
-    #productsSection {
-        float: left;
-        margin: 0px;
-        width: 100%;
+@media screen and (max-width: 1179px) {
+    #contactcontent {
+        width: 40%;
         height: auto;
-        padding-left: 20%;
-        margin-bottom: 5%;
+        float: left;
+        margin-left: 16%;
+        margin-top: 2%;
+        background-color: #F5F5F5; /* kleur 5/7 */
+        -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+        box-shadow: 0 0 10px black; /* box shadow alle kanten. */
     }
 
-    #tableWrapper {
-        float: left;
-        width: auto;
-        height: auto;
-        margin-top: 2em;
-        margin-left: 4.6em;
+    #productsSection {
+        float: right;
+        width: 25%;
+        height: 50%;
+        margin-right: 4.5%;
+        padding-top: 1.5%;
         animation: 0.7s fadeInContainer;
     }
 
-    .productImg1, .imageProductTitle1, .imageProductTitle {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .productImg {
-        width: 30%;
-        height: 45%;
-        margin-left: 0%;
+    input, textarea, label, .activateContact {
         display: inline-block;
-        border: solid 0.1em black;
-        -webkit-box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
+        width: 60%;
+        margin-left: 20%;
     }
 
     .footer {
@@ -214,8 +201,6 @@ footer {
         width: 50%;
     }
 }
-
-
 
 @keyframes textTitle {
     0% {

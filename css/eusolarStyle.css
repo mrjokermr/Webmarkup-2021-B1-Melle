@@ -17,7 +17,7 @@ body {
     background-color: rgba(100,100,100,0);
 }
 
-figcaption {
+figcaption, .figcaption1 {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -188,7 +188,7 @@ footer {
         animation: 0.7s fadeInContainer;
     }
 
-    .productImg1, .imageProductTitle1, .imageProductTitle {
+    .productImg1, .imageProductTitle1, .imageProductTitle, .figcaption1 {
         display: none;
         position: absolute;
         top: 0;

@@ -86,9 +86,9 @@ body {
     float: left;
     margin-left: 10%;
     margin-top: 2%;
-    background-color: #F5F5F5; /* kleur 5/7 */
-    -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
-    box-shadow: 0 0 10px black; /* box shadow alle kanten. */
+    background-color: #F5F5F5;
+    -webkit-box-shadow: 0 0 10px black; 
+    box-shadow: 0 0 10px black; 
     animation: 0.7s fadeInContainer;
 }
 
@@ -173,7 +173,7 @@ footer {
         float: left;
         margin-left: 16%;
         margin-top: 2%;
-        background-color: #F5F5F5; /* kleur 5/7 */
+        background-color: #F5F5F5;
         -webkit-box-shadow: 0 0 10px black; /* box shadow alle kanten. */
         box-shadow: 0 0 10px black; /* box shadow alle kanten. */
     }

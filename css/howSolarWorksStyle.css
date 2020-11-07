@@ -98,23 +98,30 @@ body {
 .article2 {
     width: 33.33%;
     height: 55.5%;
-    background-color: darkblue;
+    background-color: #FFC72B;
     float: left;
+    text-indent: 1em;
+    overflow: auto;
 }
 
 .article1 {
     float: left;
     width: 33.33%;
     height: 82%;
-    background-color: darkkhaki;
+    background-color: #8e2bff;
     word-wrap: break-word;
+    line-height: 1.6;
+    overflow: auto;
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
 }
 
 .article3 {
     float: left;
     width: 33.33%;
     height: 41%;
-    background-color: darkcyan;
+    background-color: #ff2b9c;
+    overflow: auto;
 }
 
 .article5 {
@@ -123,21 +130,25 @@ body {
     width: 33.33%;
     height: 72%;
     margin-top: -21.7%;
-    background-color: pink;
+    background-color: #9cff2b;
+    overflow: auto;
 }
 
 .article4 {
     float: right;
     width: 33.33%;
     height: 41%;
-    background-color: darkorchid;
+    background-color: #2bfff1;
+    overflow: auto;
 }
 
 .article6 {
     float: left;
     width: 66.66%;
     height: 18%;
-    background-color: darkslategray;
+    background-color: #ff5c2b;
+    text-transform: capitalize;
+    overflow: auto;
 }
 
 .articleText, .articleTextSmall, .articleTextExtraSmall {

@@ -75,6 +75,7 @@ figcaption, .figcaption1 {
         transition: ease-in-out;
         transition-duration: 0.2s;
         color: rgb(101, 79, 111);
+        font-weight: bold;
     }
 
 .linkMenuItem {
@@ -165,6 +166,7 @@ footer {
     color: #FFF;
     background-color: rgba(255, 170, 0, 0.5); /*FA0 = rgb(255, 170, 0)*/
     text-align: center;
+    z-index: 9999;
 }
 
 
